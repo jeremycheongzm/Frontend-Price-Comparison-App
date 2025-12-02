@@ -6,8 +6,8 @@
 }
   </style>
   <script>
-    let produrl = "http://localhost:5000/"
-    let dealerurl = "http://localhost:8080/"
+    let produrl = "http://localhost:5000/" /* replace with URL generated from deploying the Product Detail microservice. */
+    let dealerurl = "http://localhost:8080/" /* replace with URL generated from deploying the Dealer Pricing microservice. */
 
     axios.get(produrl+"products").then(res=>{
       let selEl = document.createElement("select");
